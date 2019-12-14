@@ -1,0 +1,32 @@
+{
+  "name": "graphql-codegen-typescript-apollo-client",
+  "version": "0.1.0",
+  "description": "GraphQL Code Generator plugin for generating a ready-to-use SDK based on apollo-graphql and GraphQL operations",
+  "repository": "https://github.com/pawsong/graphql-codegen-typescript-apollo-client",
+  "author": "Giff Song <giff.song@gmail.com>",
+  "license": "MIT",
+  "main": "dist",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc --module commonjs",
+    "prepare": "yarn clean && yarn build"
+  },
+  "dependencies": {
+    "@graphql-codegen/plugin-helpers": "^1.9.1",
+    "@graphql-codegen/visitor-plugin-common": "^1.9.1",
+    "auto-bind": "^3.0.0",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^12.12.17",
+    "@types/react": "^16.9.16",
+    "graphql": "^14.5.8",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.7.3"
+  }
+}
