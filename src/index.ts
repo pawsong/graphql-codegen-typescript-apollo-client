@@ -24,7 +24,7 @@ export const plugin: PluginFunction<RawClientSideBasePluginConfig> = (
 ) => {
   const allAst = concatAST(
     documents.reduce((prev, v) => {
-      return [...prev, v.content]
+      return [...prev, v.document]
     }, []),
   )
   const allFragments: LoadedFragment[] = [
